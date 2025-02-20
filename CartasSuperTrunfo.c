@@ -4,7 +4,6 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -121,18 +120,81 @@ int main() {
     printf("\n");
     // Comparação entre as cartas:
 
+    //população
+    printf("População: \n");
+
+    if(cart1_populacao > cart2_populacao){
+        printf("A população %d da carta 1, é maior que a %d da carta 2!!\n",cart1_populacao, cart2_populacao);
+        printf("A carta número 1 é a vencedora!!!(1)\n");
+        printf("\n");
+    }else{
+        printf("A população %d da carta 2, é maior que a %d da carta 1!!\n", cart2_populacao, cart1_populacao);
+        printf("A carta número 2 é a vencedora!!!(0)\n");
+        printf("\n");
+    }
+
+    //área
+    printf("Área: \n");
+
+    if(cart1_area > cart2_area){
+        printf("A área %.3f da carta 1, é maior que a %.3f da carta 2!!\n",cart1_area, cart2_area);
+        printf("A carta número 1 é a vencedora!!!(1)\n");
+        printf("\n");
+    }else{
+        printf("A área %.3f da carta 2, é maior que a %.3f da carta 1!!\n", cart2_area, cart1_area);
+        printf("A carta número 2 é a vencedora!!!(0)\n");
+        printf("\n");
+    }
+
+    //pib
+    printf("PIB: \n");
+
+    if(cart1_pib > cart2_pib){
+        printf("O PIB %.2f da carta 1, é maior que o %.2f da carta 2!!\n", cart1_pib, cart2_pib);
+        printf("A carta número 1 é a vencedora!!!(1)\n");
+        printf("\n");
+    }else{
+        printf("O PIB %.2f da carta 2, é maior que o %.2f da carta 1!!\n", cart2_pib, cart1_pib);
+        printf("A carta número 2 é a vencedora!!!(0)\n");
+        printf("\n");
+    }
+
+    //pontos turísticos
+    printf("Pontos Turísticos: \n");
+
+    if(cart1_pontos_turisticos > cart2_pontos_turisticos){
+        printf("Os(o) %d pontos(o) turísticos(o) da carta 1, são(é) maiores(or) que os(o) %d da carta 2!!\n",cart1_populacao, cart2_populacao);
+        printf("A carta número 1 é a vencedora!!!(1)\n");
+        printf("\n");
+    }else{
+        printf("Os(o) %d pontos(o) turísticos(o) da carta 2, são(é) maiores(or) que os(o) %d da carta 1!!\n", cart2_populacao, cart1_populacao);
+        printf("A carta número 2 é a vencedora!!!(0)\n");
+        printf("\n");
+    }
+
     //Densidade Populacional
     printf("Densidade Populacional: \n");
 
     if(cart1_densidade_pupulacional < cart2_densidade_pupulacional){
-        printf("A densidade populacional %f da carta 1, é menor que a %f da carta 2!!",cart1_densidade_pupulacional, cart2_densidade_pupulacional);
-        printf("\n");
-        printf("A carta número 1 é a vencedora!!!");
+        printf("A densidade populacional %f da carta 1, é menor que a %f da carta 2!!\n",cart1_densidade_pupulacional, cart2_densidade_pupulacional);
+        printf("A carta número 1 é a vencedora!!!(1)\n");
         printf("\n");
     }else{
-        printf("A densidade populacional %f da carta 2, é menor que a %f da carta 1!!", cart2_densidade_pupulacional, cart1_densidade_pupulacional);
+        printf("A densidade populacional %f da carta 2, é menor que a %f da carta 1!!\n", cart2_densidade_pupulacional, cart1_densidade_pupulacional);
+        printf("A carta número 2 é a vencedora!!!(0)\n");
         printf("\n");
-        printf("A carta número 2 é a vencedora!!!");
+    }
+
+    //pib per capta
+    printf("PIB per capta: \n");
+
+    if(cart1_pib_per_capta > cart2_pib_per_capta){
+        printf("O PIB per capta %f da carta 1, é maior que o %f da carta 2!!\n",cart1_pib_per_capta, cart2_pib_per_capta);
+        printf("A carta número 1 é a vencedora!!!(1)\n");
+        printf("\n");
+    }else{
+        printf("O PIB per capta %f da carta 2, é maior que o %f da carta 1!!\n", cart2_pib_per_capta, cart1_pib_per_capta);
+        printf("A carta número 2 é a vencedora!!!(0)\n");
         printf("\n");
     }
 
@@ -142,20 +204,16 @@ int main() {
     printf("Super Poder: \n");
 
     if(cart1_super_poder > cart2_super_poder){
-        printf("O super poder %f da carta 1, é maior que o %f da carta 2!!",cart1_super_poder, cart2_super_poder);
-        printf("\n");
-        printf("A carta número 1 é a vencedora!!!");
+        printf("O super poder %.4f da carta 1, é maior que o %.4f da carta 2!!\n",cart1_super_poder, cart2_super_poder);
+        printf("A carta número 1 é a vencedora!!!(1)\n");
         printf("\n");
     }else{
-        printf("O super poder %f da carta 2, é maior que o %f da carta 2!!",cart2_super_poder, cart1_super_poder);
-        printf("\n");
-        printf("A carta número 2 é a vencedora!!!");
+        printf("O super poder %.4f da carta 2, é maior que o %.4f da carta 1!!\n",cart2_super_poder, cart1_super_poder);
+        printf("A carta número 2 é a vencedora!!!(0)\n");
         printf("\n");
     }
 
     //Encerrando o programa
-
-    printf("\n");
     printf("----------Fim do programa----------\n");
     printf("\n");
 
