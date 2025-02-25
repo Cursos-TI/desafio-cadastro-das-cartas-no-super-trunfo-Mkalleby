@@ -42,7 +42,7 @@ int main() {
     scanf("%f", &cart1_pib);
     printf("Insira o número de pontos turísticos da cidade: \n");
     scanf("%d", &cart1_pontos_turisticos);
-
+   
     printf("\n");
     
     printf("----------Segunda Carta----------\n");
